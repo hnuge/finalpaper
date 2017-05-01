@@ -1,0 +1,5 @@
+\contentsline {section}{\tocsection {}{1}{Introduction}}{1}{section.1}
+\contentsline {section}{\tocsection {}{2}{Whatever}}{1}{section.2}
+\contentsline {subsection}{\tocsubsection {}{2.1}{A note on how to do the bibliography}}{1}{subsection.2.1}
+\contentsline {subsubsection}{\tocsubsubsection {}{2.1.1}{Whatever}}{1}{subsubsection.2.1.1}
+\contentsline {section}{\tocsection {}{}{References}}{2}{section*.1}

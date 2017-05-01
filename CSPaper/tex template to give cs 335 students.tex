@@ -1,0 +1,406 @@
+\documentclass[11pt,reqno]{amsart}
+
+\setlength{\textheight}{8.8in}
+\setlength{\topmargin}{-.1in}
+%\setlength{\textwidth}{6in}
+%\setlength{\oddsidemargin}{.26in}
+%\setlength{\evensidemargin}{.26in}
+\parskip=.08in
+
+\usepackage[pagebackref]{hyperref} % for pdflatex
+%\usepackage[hypertex,pagebackref]{hyperref} % for latex
+\usepackage{xcolor}
+\usepackage{amsmath,amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[mathscr]{eucal}
+\usepackage{MnSymbol}
+\usepackage[frame,ps,matrix,arrow,curve,rotate,all,2cell,tips]{xy}
+\usepackage{enumerate}
+
+
+\setcounter{tocdepth}{1}
+
+% The second argument here is about how to label the theorems, e.g. Theorem 2.2 is the second thing in section 2. The first thing in section 2 is subsection 2.1.
+\newtheorem{theorem}[subsection]{Theorem}
+\newtheorem{lemma}[subsection]{Lemma}
+\newtheorem{sublemma}[subsection]{Sub-Lemma}
+\newtheorem{proposition}[subsection]{Proposition}
+\newtheorem{corollary}[subsection]{Corollary}
+\newtheorem{thm}[subsection]{Theorem}
+\newtheorem{prop}[subsection]{Proposition}
+
+
+
+%%% The following environments have roman body.
+
+\theoremstyle{definition}
+\newtheorem{definition}[subsection]{Definition}
+\newtheorem{example}[subsection]{Example}
+\newtheorem{remark}[subsection]{Remark}
+\newtheorem{assumption}[subsection]{Assumption}
+\newtheorem{convention}[subsection]{Convention}
+\newtheorem{notation}[subsection]{Notation}
+\newtheorem{conjecture}[subsection]{Conjecture}
+\newtheorem{construction}[subsection]{Construction}
+\newtheorem{work}[subsection]{Just For Us}
+
+\numberwithin{equation}{subsection}
+
+%\newtheorem{defn}[subsubsection]{Definition}
+% donald has this command reserved
+\newtheorem{conj}[subsection]{Conjecture}
+\newtheorem{fact}[subsection]{Fact}
+\newtheorem{problem}[subsection]{Problem}
+
+% Common number systems
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\bbP}{\mathbb{P}}
+\renewcommand{\H}{\mathbb{H}}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+
+\renewcommand{\O}{\mathsf{O}}
+\newcommand{\bbA}{\mathbb{A}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbG}{\mathbb{G}} % Additive/Multiplicative group
+\newcommand{\G}{\mathbb{G}} % Additive/Multiplicative group
+
+%\newcommand{\balpha}{\mathbb{\upalpha}}
+%\newcommand{\bmu}{\mathbb{\upmu}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\title{Your title}
+
+\author{David White}
+\address{Department of Mathematics and Computer Science \\ Denison University
+\\ Granville, OH}
+\email{david.white@denison.edu}
+% Make this your own
+
+\begin{abstract}
+About one paragraph
+\end{abstract}
+
+\maketitle
+
+\tableofcontents
+
+%===================
+\section{Introduction}
+%===================
+
+How to point to other parts of the paper (sections, theorems, etc):
+
+We'll discuss this more in section \ref{sec:whatever}. This works because of the ``label" below.
+
+%==================================
+\section{Whatever}
+\label{sec:whatever}
+%==================================
+
+How to cite:
+
+This problem goes back to Barwick's work in \cite{barwickSemi}
+
+To compile, do PDF Latex twice (once for the math, a second time for all the references). If you only do it once
+
+\subsection{A note on how to do the bibliography}
+
+Note: any citation style is fine. Don't feel like you have to work hard to match the style I use below.
+
+\subsubsection{Whatever}
+
+Note that, because of the tex code in the preable (before the ``begin(document)''), I can write things like $x \in \N$ rather than $x \in \mathbb{N}$, because I defined the short-cut command $\N$.
+
+Also, this is what I meant about theorems:
+
+\begin{theorem}
+Latex is awesome
+\end{theorem}
+
+Sometimes you don't want the text to be italicized, for things like remarks...
+
+\begin{remark}
+It would be really annoying if all this text was italicized like in a theorem, but thankfully it's not, because I defined the remark environment differently in the preamble. These are things you learn over time, but it's valuable to not be afraid to play around with the preamble. Google is your friend.
+\end{remark}
+
+%=============================
+%        References
+%=============================
+
+\begin{thebibliography}{AAAAAA}
+\bibitem[BR14]{barnes-roitzheim-stable}
+David Barnes and Constanze Roitzheim.
+\newblock Stable left and right {B}ousfield localisations.
+\newblock {\em Glasg. Math. J.}, 56(1):13--42, 2014.
+
+\bibitem[Bar10]{barwickSemi}
+Clark Barwick.
+\newblock On left and right model categories and left and right {B}ousfield
+  localizations.
+\newblock {\em Homology, Homotopy Appl.}, 12(2):245--320, 2010.
+
+\bibitem[BB14]{batanin-berger}
+Michael Batanin and Clemens Berger.
+\newblock Homotopy theory for algebras over polynomial monads, preprint
+  available electronically from http://arxiv.org/abs/1305.0086.
+\newblock 2014.
+
+\bibitem[Bau99]{bauer-boardman-colocalizations} F. Bauer, The {B}oardman category of spectra, chain complexes and (co-)localizations, Homology Homotopy Appl. (1), 95-116, 1999
+
+\bibitem[Bau02]{bauer-coloc-chain-spectra} F. Bauer, Colocalizations and their realizations as spectra, Theory Appl. Categ. 10 (8) 162-179, 2002.
+
+\bibitem[Bec14]{becker} H. Becker, Models for Singularity Categories, Adv. Math 254, 187-232, 2014.
+
+\bibitem[BR07]{beligiannis-reiten} A. Beligiannis and I. Reiten, Homological and homotopical aspects of torsion theories, Mem. Amer. Math. Soc. 188 (883), 2007
+
+\bibitem[BCR95]{benson-carlson-rickard-complexity1} D. Benson, J. Carlson, J. Rickard, Complexity and varieties for infinitely generated modules, Math. Proc. Cambridge Philos. Soc. 118 (2), 223-243, 1995.
+
+\bibitem[BCR96]{benson-carlson-rickard-complexity2} D. Benson, J. Carlson, J. Rickard, Complexity and varieties for infinitely generated modules. {II}, Math. Proc. Cambridge Philos. Soc. 120 (4), 597-615, 1996.
+
+\bibitem[BIK11]{benson-iyengar-krause-stratifying-localizing} D. Benson, S. Iyengar, H. Krause, Stratifying modular representations of finite groups, Ann. of Math. (2) 174 (3), 1643-1684, 2011.
+
+\bibitem[BIK12]{benson-iyengar-krause-colocalizing} D. Benson, S. Iyengar, H. Krause, Colocalizing subcategories and cosupport, J. Reine Angew. Math. 673, 161-207, 2012
+
+\bibitem[BM03]{bm03}
+C. Berger and I. Moerdijk, Axiomatic homotopy theory for operads, Comment. Math. Helv. 78 (2003) 805-831.
+
+
+%\bibitem[BM06]{bm06}
+%C. Berger and I. Moerdijk, The Boardman-Vogt resolution of operads in monoidal model categories, Topology 45 (2006), 807-849.
+
+
+\bibitem[BM07]{bm07}
+C. Berger and I. Moerdijk, Resolution of coloured operads and rectification of homotopy algebras, Contemp. Math. 431 (2007), 31-58.
+
+
+
+\bibitem[BH14]{blumberg-hill}
+Andrew~J. Blumberg and Michael~A. Hill.
+\newblock Operadic multiplications in equivariant spectra, norms, and
+  transfers, preprint, http://arxiv.org/abs/1309.1750.
+\newblock 2014.
+
+\bibitem[BN93]{bokstedt-neeman-holims} M. B{\"o}kstedt and A. Neeman, Homotopy limits in triangulated categories, Compositio Math. 86 (2), 209-234, 1993
+
+
+\bibitem[Bor94]{borceux}
+F. Borceux, Handbook of categorical algebra 2, categories and structures, Cambridge Univ. Press, Cambridge, UK.
+
+\bibitem[BGH14]{bravo-gillespie-hovey} D. Bravo, J. Gillespie, M. Hovey, The stable module category of a general ring, arXiv:1405.5768, 2014
+
+\bibitem[CRT14]{carato} C. Casacuberta, O. Ravent\'{o}s, A. Tonks, Comparing Localizations across Adjunctions, arxiv 1404.7340.
+
+\bibitem[CCS07]{castellana-crespo-scherer-conn-covers} N. Castellana, J. Crespo, and J. Scherer, On the cohomology of highly connected covers of finite {H}opf
+              spaces, Adv. Math 215 (1), 250--262, 2007
+
+\bibitem[Cha96]{chacholski-thesis}
+W. Chach\'{o}lski, On the functors {$CW_A$} and {$P_A$}, Duke Math. J. 84 (3), 599-631, 1996.
+
+\bibitem[CDI02]{chacholski-dwyer-intermont}
+W. Chach\'{o}lski, W. Dwyer, M. Intermont, The {$A$}-complexity of a space, J. London Math. Soc. (2), 65 (1), 204-222, 2002.
+
+\bibitem[CPS04]{chacholski-parent-stanley}
+W. Chach\'{o}lski, P.E. Parent, D. Stanley, Cellular generators, Proc. Amer. Math. Soc. 132 (11), 3397-3409 (electronic), 2004.
+
+\bibitem[CI04]{christensen-isaksen}
+J.D. Christensen and D. Isaksen, Duality and pro-spectra, Alg. Geom. Top., 781-812, 2004.
+
+\bibitem[DS95]{dwyer-spalinski}
+W.~G. Dwyer and J.~Spali{\'n}ski.
+\newblock Homotopy theories and model categories.
+\newblock In {\em Handbook of algebraic topology}, pages 73--126.
+  North-Holland, Amsterdam, 1995.
+
+%\bibitem[EKMM97]{ekmm}
+%A.D. Elmendorf, I. Kriz, M.A. Mandell, and J.P. May, Rings, modules, and algebras in stable homotopy theory, Math. Surveys and Monographs 47, Amer. Math. Soc., Providence, RI, 1997.
+
+\bibitem[EKV05]{everaert-kieboom-linden-internal-cat} T. Everaert, R.W. Kieboom, T. Van der Linden, Model structures for homotopy of internal categories, Theory Appl. Categ. 15 (3), 66-94, 2005
+
+\bibitem[Far96]{farjoun}
+E.D. Farjoun, Cellular Spaces, Null Spaces and Homotopy Localization, Lecture Notes in Math. 1622, Springer-Verlag, Berlin, 1996.
+
+
+\bibitem[Fau08]{fausk}
+Halvard Fausk, \emph{Equivariant homotopy theory for pro-spectra}, Geom. Topol.
+  \textbf{12} (2008), no.~1, 103--176. \MR{2377247 (2009c:55010)}
+
+
+
+\bibitem[FMY09]{fmy}
+Y. Fr\'{e}gier, M. Markl, and D. Yau, The $L_\infty$-deformation complex of diagrams of algebras, New York J. Math. 15 (2009), 353-392.
+
+
+\bibitem[Fre10]{fresse}
+B. Fresse, Props in model categories and homotopy invariance of structures, Georgian Math. J. 17 (2010), 79-160.
+
+\bibitem[Gil06]{gillespie-qcoh} J. Gillespie, The Flat Model Structure on Chain Complexes of Sheaves, Transactions of the American Mathematical Society 358 (7), 2855--2874, 2006
+
+\bibitem[Gil08]{gillespie-degreewise} J. Gillespie, Cotorsion pairs and degreewise homological model structures, Homol. Homotopy Appl 10 (1), 283-304, 2008
+
+\bibitem[Gut12]{gutierrez-transfer-quillen} J. Guti{\'e}rrez, Transfer of algebras over operads along {Q}uillen adjunctions, J. Lond. Math. Soc. (2), 86 (2), 607--625, 2012.
+
+\bibitem[GR14]{gutierrez-roitzheim} J. Guti{\'e}rrez and C. Roitzheim, {B}ousfield localisations along {Q}uillen bifunctors and applications, arXiv:1411.0500
+
+
+%\bibitem[GZ67]{gz}
+%P. Gabriel and M. Zisman, Calculus of fractions and homotopy theory, Springer-Verlag, Berlin, 1967.
+
+
+%\bibitem[GJ99]{gj}
+%P.G. Goerss and J.F. Jardine, Simplicial homotopy theory, Birkh\"{a}user, Basel, 1999.
+
+\bibitem[GS14]{groth-stovicek} M. Groth and J. Stovicek, Tilting theory for trees via stable homotopy theory, arXiv:1402.6984, 2014
+
+
+\bibitem[Hap88]{happel-book} D. Happel, Triangulated categories in the representation theory of finite-dimensional algebras, London Mathematical Society Lecture Note Series 119, Cambridge University Press, 1988
+
+\bibitem[Har10a]{agt2}
+J.E. Harper, Bar constructions and Quillen homology of modules over operads, Algebr. Geom. Topol., 10(1):87--136, 2010. 
+
+
+
+\bibitem[Har10b]{harper-jpaa}
+J.E. Harper, Homotopy theory of modules over operads and non-$\Sigma$ operads in monoidal model categories, J. Pure Appl. Algebra 214 (2010), 1407-1434.
+
+
+%\bibitem[HH13]{harper-gnt}
+%J.E. Harper and K. Hess, Homotopy completion and topological Quillen homology of structured ring spectra, Geom. Topol., 17(3):1325--1416, 2013.
+
+\bibitem[Hess07]{hess-rational-survey} K. Hess, Rational homotopy theory: a brief introduction, Contemp. Math., 436, 175-202, 2007
+
+\bibitem[Hin97]{hinich}
+V. Hinich, Homological algebra of homotopy algebra, Comm. Alg. 25 (1997), 3291-3323.
+
+
+\bibitem[Hir03]{hirschhorn}
+P.S. Hirschhorn, Model categories and their localizations, Math. Surveys and Monographs 99, Amer. Math. Soc. Providence, RI, 2003.
+
+
+\bibitem[Hov99]{hovey}
+M. Hovey, Model categories, Math. Surveys and Monographs 63, Amer. Math. Soc. Providence, RI, 1999.
+
+\bibitem[Hov02]{hovey-cotorsion} M. Hovey, Cotorsion pairs, model category structures, and representation theory, Math Z. 241 (3), 553--592, 2002
+
+\bibitem[HPS97]{hovey-palmieri-strickland}
+Mark Hovey, John~H. Palmieri, and Neil~P. Strickland.
+\newblock Axiomatic stable homotopy theory.
+\newblock {\em Mem. Amer. Math. Soc.}, 128(610):x+114, 1997.
+
+\bibitem[IKM12]{inassaridze-coloc-thick} H. Inassaridze, T. Kandelaki, R. Meyer, Localisation and colocalisation of triangulated categories at thick subcategories, Math. Scand. 110 (1), 59-74, 2012
+
+\bibitem[JJ06]{joachim-johnson} M. Joachim and M. Johnson, Realizing {K}asparov's {$KK$}-theory groups as the homotopy classes of maps of a {Q}uillen model category, Contemp. Math 399, 163-197, 2006.
+
+\bibitem[JY09]{jy1}
+M.W. Johnson and D. Yau, On homotopy invariance for algebras over colored PROPs, J. Homotopy and Related Structures 4 (2009), 275-315.
+
+
+
+
+
+\bibitem[Mac98]{maclane}
+S. Mac Lane, Categories for the working mathematician, Grad. Texts in Math. 5, 2nd ed., Springer-Verlag, New York, 1998.
+
+
+\bibitem[MSS02]{mss}
+M. Markl, S. Shnider, and J. Stasheff, Operads in Algebra, Topology and Physics, Math. Surveys and Monographs 96, Amer. Math. Soc., Providence, 2002.
+
+\bibitem[MM02]{mandell-may-equivariant}
+M.~A. Mandell and J.~P. May.
+\newblock Equivariant orthogonal spectra and {$S$}-modules.
+\newblock {\em Mem. Amer. Math. Soc.}, 159(755):x+108, 2002.
+
+\bibitem[May72]{may72}
+J.P. May, The geometry of iterated loop spaces, Lecture Notes in Math. 271, Springer-Verlag, New York, 1972.
+
+
+\bibitem[May97]{may97}
+J.P. May, Definitions: operads, algebras and modules, Contemporary Math. 202, p.1-7, 1997.
+
+\bibitem[MP12]{may-ponto-more-concise} J.P. May and K. Ponto, More concise algebraic topology, University of Chicago Press, 2012.
+
+\bibitem[MM97]{mcgibbon-moller} C. McGibbon and J. M{\o}ller, Connected covers and {N}eisendorfer's localization theorem, Fund. Math. 152 (3) 211--230, 1997
+
+\bibitem[Mur07]{murfet-thesis} D. Murfet, The mock homotopy category of projectives and Grothendieck duality, PhD thesis, Australian National University, 2007. (online at www.therisingsea.org)
+
+\bibitem[Nee01]{neeman-book} A. Neeman, Triangulated categories, Annals of Mathematics Studies 148, Princeton University Press, 2001
+
+\bibitem[Nof99]{nofech}
+A. Nofech, $A$-cellular homotopy theories, Journal of Pure and Applied Algebra 141 (3), 249-267, 1999.
+
+\bibitem[Qui67]{quillen}
+D. Quillen, Homotopical Algebra, Lecture Notes in Mathematics, Springer-Verlag, No. 43, 1967
+
+\bibitem[Rez96]{rezk}
+C.W. Rezk, Spaces of algebra structures and cohomology of operads, Ph.D. thesis, MIT, 1996.
+
+
+%\bibitem[Rob11]{robertson}
+%M. Robertson, The Homotopy Theory of Simplicially Enriched Multicategories, preprint, arXiv:1109.1004.
+
+\bibitem[Rez96]{rezk-folk} C. Rezk, A model category for categories, preprint available electronically from http://www.math.uiuc.edu/$\sim$rezk/cat-ho.dvi, 1996
+
+\bibitem[Rez97]{rickard-idempotent} J. Rickard, Idempotent modules in the stable category, J. London Math. Soc (2), 56 (1), 149-170, 1997
+
+\bibitem[SS00]{ss}
+S. Schwede and B. Shipley, Algebras and modules in monoidal model categories, Proc. London Math. Soc. 80 (2000), 491-511.
+
+\bibitem[SS03]{schwede-shipley-equivalences} S. Schwede and B. Shipley, Equivalences of monoidal model categories, Algebr. Geom. Topol. (3) 287-334, 2003
+
+\bibitem[Sha11]{shamir-coloc-stmod} S. Shamir, Colocalization functors in derived categories and torsion theories, Homology Homotopy Appl. 13 (1), 75-88, 2011
+
+
+
+\bibitem[Whi14a]{white-commutative-monoids}
+D. White, Model structures on commutative monoids in general model categories, preprint available electronically from http://arxiv.org/abs/1403.6759. 2014.
+
+
+\bibitem[Whi14b]{white-localization}
+D. White. Monoidal bousfield localizations and algebras over operads, preprint.
+
+
+%\bibitem[Whi14c]{white-thesis}
+%D. White, Monoidal bousfield localizations and algebras over operads. 2014. Thesis (Ph.D.)-Wesleyan University.
+
+\bibitem[Whi13]{white-topological}
+David White.
+\newblock A short note on smallness and topological monoids, preprint available
+  electronically from http://personal.denison.edu/$\sim$whiteda/research.html.
+\newblock 2013.
+
+
+
+\bibitem[WY15]{white-yau}
+D. White and D. Yau, Bousfield localization and algebras over colored operads, arXiv:1503.06720.
+
+
+
+\end{thebibliography}
+\end{document}
+
+
+
