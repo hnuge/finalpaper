@@ -148,15 +148,15 @@ There are three kinds of SL ratios that need to be calculated in the data cluste
 $|S(C_i,t)|$ represents the number of small items in $t$ and $|L(C_i,t)|$ represents the number of large items in $t$.
 
 
-	\item \textbf{SL Ratio of a Clustering:} The SL ratio for a clustering $U = <C_1, ..., C_p>$ is defined as:
+	\item \textbf{SL Ratio of a Clustering:} The SL ratio for a clustering $U$ = $<C_1, ..., C_p>$ is defined as:
 	$$R_{SL}(U) = \sum_{i=1}^{p} \sum_{j=1}^{N^T(C_i)} R_{SL}(C_i, t_j), $$
-	$N^T(C_i)$ is the number of transactions and $t_j$ is the $j$th transaction in the cluster $C_i$. 
+	$N^T(C_i)$ is the number of transactions and $t_j$ is the $j$th transaction in the cluster $C_i$. Essentially, we sum up the SL Ratio of a transaction for all transactions within an individual cluster. We then do this for every cluster within the clustering.
 	
 	
 	
-	\item \textbf{Average SL Ratio:} The average SL ratio for a clustering $U =<C_1, ..., C_p>$ is defined as:
+	\item \textbf{Average SL Ratio:} The average SL ratio for a clustering $U$ = $<C_1, ..., C_p>$ is defined as:
 	$$\alpha(u) = \frac{R_{SL}(U)}{N^T(U)}$$
-	$N^T(U)$ is the number of transactions in clustering $U$.
+	Where $N^T(U)$ is the number of transactions in clustering $U$.
 	
 	\end{enumerate}
 

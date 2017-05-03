@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 MAY 2017 16:16
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2017 16:21
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -741,6 +745,7 @@ Here is how much of TeX's memory you used:
  14855 multiletter control sequences out of 15000+600000
  20000 words of font info for 74 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
+<<<<<<< Updated upstream
  34i,7n,35p,3244b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/
 usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/
@@ -758,6 +763,25 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on "STC Draft.pdf" (7 pages, 665600 bytes).
+=======
+ 34i,7n,35p,3244b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/
+usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/
+local/texlive/2015/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/loca
+l/texlive/2015/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}</usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "STC Draft.pdf" (7 pages, 665834 bytes).
+>>>>>>> Stashed changes
 PDF statistics:
  150 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams
