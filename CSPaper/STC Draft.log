@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 MAY 2017 17:14
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2017 17:18
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,7 +564,14 @@ loaded)) (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks33
 )
-(./STC Draft.aux)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count120
+\float@exts=\toks34
+\float@box=\box33
+\@float@everytoks=\toks35
+\@floatcapt=\box34
+) (./STC Draft.aux)
 \openout1 = `"STC Draft.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
@@ -579,12 +590,21 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 94.
+<<<<<<< Updated upstream
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+=======
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+>>>>>>> Stashed changes
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 94.
 LaTeX Font Info:    Try loading font information for U+msa on input line 94.
+<<<<<<< Updated upstream
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+=======
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+>>>>>>> Stashed changes
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 94.
@@ -592,7 +612,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 94.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<<<<<<< Updated upstream
 \AtBeginShipoutBox=\box33
+=======
+\AtBeginShipoutBox=\box35
+>>>>>>> Stashed changes
 Package hyperref Info: Link coloring OFF on input line 94.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -601,7 +625,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count120
+\c@section@level=\count121
 )
 LaTeX Info: Redefining \ref on input line 94.
 LaTeX Info: Redefining \pageref on input line 94.
@@ -614,19 +638,27 @@ LaTeX Info: Redefining \nameref on input line 94.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
+\scratchcounter=\count122
 \scratchdimen=\dimen154
-\scratchbox=\box34
-\nofMPsegments=\count122
-\nofMParguments=\count123
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count124
+\scratchbox=\box36
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count125
 \MPscratchDim=\dimen155
+<<<<<<< Updated upstream
 \MPnumerator=\count125
 \makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+=======
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks37
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+>>>>>>> Stashed changes
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
@@ -655,11 +687,14 @@ ac-tions $\OML/cmm/m/it/10.95 D \U/MnSymbolD/m/n/10.95 ^^@ []$\OT1/cmr/m/n/10.9
 5 ,
  []
 
+<<<<<<< Updated upstream
 
 Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
+=======
+>>>>>>> Stashed changes
 <line.png, id=41, 505.89pt x 95.35625pt>
 File: line.png Graphic file (type png)
  <use line.png>
@@ -696,30 +731,51 @@ ACTION DATA []
 [5 <./pic4.png>] <pic1.png, id=79, 489.83pt x 222.8325pt>
 File: pic1.png Graphic file (type png)
  <use pic1.png>
+<<<<<<< Updated upstream
 Package pdftex.def Info: pic1.png used on input line 197.
 (pdftex.def)             Requested size: 367.3716pt x 167.12396pt.
 
 Overfull \hbox (19.3716pt too wide) in paragraph at lines 197--198
+=======
+Package pdftex.def Info: pic1.png used on input line 195.
+(pdftex.def)             Requested size: 367.3716pt x 167.12396pt.
+
+Overfull \hbox (19.3716pt too wide) in paragraph at lines 195--196
+>>>>>>> Stashed changes
 [][] 
  []
 
 <pic2.png, id=80, 524.96124pt x 257.96375pt>
 File: pic2.png Graphic file (type png)
  <use pic2.png>
+<<<<<<< Updated upstream
 Package pdftex.def Info: pic2.png used on input line 207.
 (pdftex.def)             Requested size: 393.71997pt x 193.47232pt.
 
 Overfull \hbox (45.71997pt too wide) in paragraph at lines 207--208
+=======
+Package pdftex.def Info: pic2.png used on input line 203.
+(pdftex.def)             Requested size: 393.71997pt x 193.47232pt.
+
+Overfull \hbox (45.71997pt too wide) in paragraph at lines 203--204
+>>>>>>> Stashed changes
 [][] 
  []
 
 [6 <./pic1.png>] <pic3.png, id=88, 524.96124pt x 270.00874pt>
 File: pic3.png Graphic file (type png)
  <use pic3.png>
+<<<<<<< Updated upstream
 Package pdftex.def Info: pic3.png used on input line 213.
 (pdftex.def)             Requested size: 393.71997pt x 202.50604pt.
 
 Overfull \hbox (45.71997pt too wide) in paragraph at lines 213--214
+=======
+Package pdftex.def Info: pic3.png used on input line 209.
+(pdftex.def)             Requested size: 393.71997pt x 202.50604pt.
+
+Overfull \hbox (45.71997pt too wide) in paragraph at lines 209--210
+>>>>>>> Stashed changes
 [][] 
  []
 
@@ -730,6 +786,7 @@ ACTION DATA []
  []
 
 [7 <./pic2.png> <./pic3.png>]
+<<<<<<< Updated upstream
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
  [8]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
@@ -745,6 +802,23 @@ Here is how much of TeX's memory you used:
  158757 string characters out of 6133351
  286159 words of memory out of 5000000
  14855 multiletter control sequences out of 15000+600000
+=======
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
+ (./STC Draft.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
+Package rerunfilecheck Info: File `"STC Draft".out' has not changed.
+(rerunfilecheck)             Checksum: C03460766681CDCF0CA5626F311CE2B9;296.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 217.
+ ) 
+Here is how much of TeX's memory you used:
+ 11740 strings out of 493089
+ 159375 string characters out of 6134842
+ 287069 words of memory out of 5000000
+ 14843 multiletter control sequences out of 15000+600000
+>>>>>>> Stashed changes
  20000 words of font info for 74 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  34i,7n,35p,3244b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -763,7 +837,11 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+<<<<<<< Updated upstream
 Output written on "STC Draft.pdf" (8 pages, 667018 bytes).
+=======
+Output written on "STC Draft.pdf" (8 pages, 667162 bytes).
+>>>>>>> Stashed changes
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams

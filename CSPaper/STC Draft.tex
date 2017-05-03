@@ -17,7 +17,11 @@
 \usepackage{MnSymbol}
 \usepackage[frame,ps,matrix,arrow,curve,rotate,all,2cell,tips]{xy}
 \usepackage{enumerate}
+<<<<<<< Updated upstream
 \raggedbottom
+=======
+\usepackage{float}
+>>>>>>> Stashed changes
 
 \setcounter{tocdepth}{1}
 
@@ -134,7 +138,6 @@ The market-basket data is represented by a set of transactions $D = {t_1, t_2, .
 $Sup_C(i)$ is the support of an item $i$ in a cluster $C$. The support of an item is defined as the percentage of transactions which contain item $i$ in cluster $C$. If $Sup_C(i)$ is larger than the minimum support $S$, the item $i$ in a cluster $C$ is  called a {\em large item}. If an item $j$ in a cluster $C$ has a $Sup_C(j)$ that is smaller than the maximum ceiling $E$ the item $j$ is called a {\em small item}. An item is called a middle item if it is neither large or small.
 
 $\newline$
-
 \centerline{\includegraphics[scale=.5]{line}}
 
 
@@ -190,25 +193,22 @@ $|S(C_i,t)|$ represents the number of small items in $t$ and $|L(C_i,t)|$ repres
 To accurately compare other Clustering algorithms with STC four experiments were conducted. Algorithm STC was compared to algorithm ROCK, algorithm SLR and algorithm STC without self-tuning techniques (referred to as Basic). Real data sets from the United States Congressional Votes records in 1984 containing 435 records were used in the experiments for performance evaluation. Each record contains 16 binary attributes corresponding to each congressman's vote on 16 issues. To provide further insight, synthetic data was generated for performance evaluation. The data was generated using the IBM Quest Synthetic Data Generation Code. This code generates transaction data which mimics the real world environment. In addition, real market-basket data from a large bookstore company is used, containing $|D| = 98934$ transactions and $N^I$ = 58909 items.
 
 \subsection{Experiment One: Evaluating clustering quality for congressional voting data.}
-
 The quality of each algorithm is evaluated by \textit{noise ratios}. The noise ratio is calculated by dividing the number of obscure politics in the clustering by the total number in the clustering. The smaller the noise ratio, the better the quality of the algorithm has.
 
 
 \includegraphics[scale=.75]{pic1}
 
-
-As you can see from the results, STC with tuning-techniques emerged as the best quality out of all clustering algorithms.
-
+As you can see from the results, STC with tuning-techniques emerged as the best quality out of all clustering algorithms since its noise ratio is the smallest in both clusters.
 
 \subsection{Experiment Two: Evaluating the clustering quality of issues for congressional voting data.} 
 
-For each issue in the Congressional Voting records, each congressman either voted yes (represented as a 1) or voted no (represented as a 0). Each of the 16 records represents a transaction and for each issue, your voting action represents an item in the clusters. This means that to obtain a high quality cluster, each cluster should be close to 1 or close to 0.  This means that a high quality cluster will contain congressmen who voted similarly on an issue.  In the figure below,  each point represents a cluster. Therefore, ideally each point is either very close to height 1, or height 0.
+For each issue in the Congressional Voting records, each congressman either voted yes (represented as a 1) or voted no (represented as a 0). Each of the 16 records represents a transaction and for each issue, the voting action represents an item in the clusters. This means that to in order to obtain a high quality cluster, each cluster should be close to 1 or close to 0.  This means that a high quality cluster will contain congressmen who voted similarly on an issue, whether it was yes or no does not matter.  In the figure below,  each point represents a cluster. Therefore, ideally each point is either very close to height 1, or height 0.
 
 \includegraphics[scale=.75]{pic2}
 
 From the data of the experiment we can see that STC has the best clustering quality in most issues ($\frac{22}{32}$ or 69$\%$)
 
-\subsection{Experiment Three: Evaluating the scalability by synthetic workload.} This experiment is meant to show how well each algorithm performs as the number of transactions varies from 5000 to 20000. The number of items $N^I$ is set to 1000 and the size of the transaction is picked from a Poisson distribution with mean $|T| = 5$. The data shows that algorithm STC outperforms all other algorithms in scalability. As the number of transactions increases, algorithm STC's execution time grows the slowest.
+\subsection{Experiment Three: Evaluating the scalability by synthetic workload.} This experiment is meant to show how well each algorithm performs as the number of transactions varies from 5000 to 20000. The number of items $N^I$ is set to 1000 and the size of the transaction is picked from a Poisson distribution with mean $|T| = 5$. The data shows that algorithm STC outperforms all other algorithms in scalability. As the number of transactions increases, algorithm STC's execution time grows the slowest and therefore has the best scalability.
 
 \includegraphics[scale=.75]{pic3}
 
@@ -217,8 +217,6 @@ From the data of the experiment we can see that STC has the best clustering qual
 %==================================
 
 Algorithm STC utilizes a self-tuning technique for adaptively tuning the input and output SL ratio thresholds to minimize the SL ratios of transactions in the clusters efficiently. By utilizing the self-tuning technique, algorithm STC is able to efficiently minimize the SL rations of transactions in the clusters. Several experiments were conducted to compare STC with other similar clustering algorithms.  It is shown in the results of the experiments that using the self-tuning technique in STC allows the STC algorithm to outperform algorithm SLR, algorithm ROCK and algorithm STC without self-tuning. Algorithm STC not only outperforms the others in execution time but also provides the best quality clusters.
-
-The end
 
 \end{document}
 
