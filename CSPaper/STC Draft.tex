@@ -103,7 +103,9 @@
 \section{Introduction}
 %===================
 
-Database mining has wide applications for improving marketing strategies. To improve these marketing strategies, we use data clustering. Data clustering divides a set of data items into separate groups such that items in the same group are as similar to one another as possible. Clustering large datasets can uncover useful patterns among the data. 
+Database mining has wide applications for improving marketing strategies. To improve these marketing strategies, we use data clustering. Data clustering divides a set of data items into separate groups such that items in the same group are as similar to one another as possible. Clustering large datasets can uncover useful patterns among the data.  Data clustering is commonly used by companies such as Amazon.  By identifying items frequently bought together, Amazon can advertise similar items to customers, increasing the chances of a customer seeing an item they want and buying it.
+
+\includegraphics[scale=.5]{amazon}
 
 Market-basket data is known to have high dimensionality, sparsity, and to have massive outliers. The {\em small-large (SL) ratio} is the ratio of the number of small items to large items in the data. A {\em large item} is an item which occurs frequently in transactions. A {\em small item} is an item that occurs infrequently in transactions. Smaller SL ratios indicate more similarity between the items in the cluster. This paper develops a {\em Self-Tuning Clustering algorithm (algorithm STC)} to efficiently cluster the market-basket data by adaptively tuning the SL ratio. The algorithm consists of three phases:
 	\begin{enumerate}
