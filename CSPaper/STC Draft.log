@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2017 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2017 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -656,10 +656,15 @@ ac-tions $\OML/cmm/m/it/10.95 D \U/MnSymbolD/m/n/10.95 ^^@ []$\OT1/cmr/m/n/10.9
 5 ,
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
 <line.png, id=41, 505.89pt x 95.35625pt>
 File: line.png Graphic file (type png)
  <use line.png>
-Package pdftex.def Info: line.png used on input line 135.
+Package pdftex.def Info: line.png used on input line 137.
 (pdftex.def)             Requested size: 252.94437pt x 47.678pt.
  [2 <./line.png>]
 Overfull \hbox (48.79062pt too wide) has occurred while \output is active
@@ -670,20 +675,20 @@ ACTION DATA []
 [3] [4] <pic4.png, id=73, 537.00626pt x 386.44376pt>
 File: pic4.png Graphic file (type png)
  <use pic4.png>
-Package pdftex.def Info: pic4.png used on input line 181.
+Package pdftex.def Info: pic4.png used on input line 183.
 (pdftex.def)             Requested size: 375.90181pt x 270.50877pt.
 
-Overfull \hbox (27.90181pt too wide) in paragraph at lines 181--182
+Overfull \hbox (27.90181pt too wide) in paragraph at lines 183--184
 [][] 
  []
 
 <pic1.png, id=74, 489.83pt x 222.8325pt>
 File: pic1.png Graphic file (type png)
  <use pic1.png>
-Package pdftex.def Info: pic1.png used on input line 193.
+Package pdftex.def Info: pic1.png used on input line 195.
 (pdftex.def)             Requested size: 367.3716pt x 167.12396pt.
 
-Overfull \hbox (19.3716pt too wide) in paragraph at lines 193--194
+Overfull \hbox (19.3716pt too wide) in paragraph at lines 195--196
 [][] 
  []
 
@@ -696,10 +701,10 @@ ACTION DATA []
 [5 <./pic4.png>] <pic2.png, id=81, 524.96124pt x 257.96375pt>
 File: pic2.png Graphic file (type png)
  <use pic2.png>
-Package pdftex.def Info: pic2.png used on input line 203.
+Package pdftex.def Info: pic2.png used on input line 205.
 (pdftex.def)             Requested size: 393.71997pt x 193.47232pt.
 
-Overfull \hbox (45.71997pt too wide) in paragraph at lines 203--204
+Overfull \hbox (45.71997pt too wide) in paragraph at lines 205--206
 [][] 
  []
 
@@ -707,14 +712,14 @@ Overfull \hbox (45.71997pt too wide) in paragraph at lines 203--204
 File: pic3.png Graphic file (type png)
 
 <use pic3.png>
-Package pdftex.def Info: pic3.png used on input line 209.
+Package pdftex.def Info: pic3.png used on input line 211.
 (pdftex.def)             Requested size: 393.71997pt x 202.50604pt.
 
-Overfull \hbox (45.71997pt too wide) in paragraph at lines 209--210
+Overfull \hbox (45.71997pt too wide) in paragraph at lines 211--212
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
 
 Overfull \hbox (48.79062pt too wide) has occurred while \output is active
  \OT1/cmr/m/n/8 SELF-TUNING CLUSTERING: AN ADAPTIVE CLUSTERING METHOD FOR TRANS
@@ -722,13 +727,13 @@ ACTION DATA []
  []
 
 [7 <./pic3.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (./STC Draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `"STC Draft".out' has not changed.
 (rerunfilecheck)             Checksum: C03460766681CDCF0CA5626F311CE2B9;296.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
  11684 strings out of 493089
@@ -753,7 +758,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "STC Draft.pdf" (7 pages, 665700 bytes).
+Output written on "STC Draft.pdf" (7 pages, 665697 bytes).
 PDF statistics:
  150 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams
