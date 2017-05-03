@@ -156,7 +156,7 @@ $|S(C_i,t)|$ represents the number of small items in $t$ and $|L(C_i,t)|$ repres
 	
 	\item \textbf{Average SL Ratio:} The average SL ratio for a clustering $U$ = $<C_1, ..., C_p>$ is defined as:
 	$$\alpha(u) = \frac{R_{SL}(U)}{N^T(U)}$$
-	Where $N^T(U)$ is the number of transactions in clustering $U$.
+	 $N^T(U)$ is the number of transactions in clustering $U$. By dividing the SL Ratio of a Clustering by the number of transactions in the clustering, we can compute the average SL Ratio of the clustering.
 	
 	\end{enumerate}
 
@@ -164,9 +164,9 @@ $|S(C_i,t)|$ represents the number of small items in $t$ and $|L(C_i,t)|$ repres
 
 {\em Given a database of transactions, determine a clustering U such that the average SL ratio $\alpha(U)$ is minimized.}  The clustering technique aims to maximize both the {\em intra-cluster similarity} and the {\em inter-cluster dissimilarity} of the data in order to minimize the average SL ratio. 
 
-\textbf{Intra-Cluster Similarity:} Intra-cluster similarity of transactions is achieved by maximizing the number of large items in each cluster while minimizing the number of small items in each cluster. We know that an item $i$ is large if there are relatively many transactions containing $i$, while an item $j$ is small if there are relatively few transactions containing $j$. Transactions are similar to one another if the contain many common large items and fewer small items. 
+\textbf{Intra-Cluster Similarity:} Intra-Cluster Similarity of transactions means the transactions within a cluster are as similar to one another as possible. We achieve Intra-Cluster Similarity by maximizing the number of large items in each cluster while minimizing the number of small items in each cluster. We know that an item $i$ is large if there are relatively many transactions containing $i$, while an item $j$ is small if there are relatively few transactions containing $j$. Transactions are similar to one another if the contain many common large items and fewer small items. Thus, by maximizing large items in a cluster we construct a cluster with many similar transactions.
 
-\textbf{Inter-Cluster Dissimilarity:} We achieve inter-cluster dissimilarity of transactions by maximizing the number of large items and minimizing the number of small items so dissimilar transactions will be allocated to the different clusters. If an item $i$ is large in a cluster $C_a$, $i$ should be small in cluster $C_b$. 
+\textbf{Inter-Cluster Dissimilarity:} We achieve inter-cluster dissimilarity of transactions by maximizing the number of large items and minimizing the number of small items so dissimilar transactions will be allocated to the different clusters. Ideally, if an item $i$ is large in a cluster $C_a$, $i$ should be small in cluster $C_b$. 
 
 %==================================
 \section{Algorithm STC for Adaptively Clustering Market-Basket Data}
