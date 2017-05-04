@@ -1,0 +1,8 @@
+@article{AAFPW:1997,
+	Author = {James Aspnes and Yossi Azar and Amos Fiat and Serge Plotkin and Orli Waarts},
+	Journal = {Journal of the Association for Computing Machinery},
+	Number = {3},
+	Pages = {486--504},
+	Title = {On-line Routing of Virtual Circuits with Applications to Load Balancing and Machine Scheduling},
+	Volume = {44},
+	Year = {1997}}
